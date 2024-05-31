@@ -21,13 +21,13 @@ const OurServices = () => {
       ],
 
       image: (
-        <img src="./images/brandingOrange.png" alt="brandingOrangeImage" />
+        <img src="./images/imgservice1.png" alt="img-service1" />
       ),
       imageAfter: (
-        <img src="./images/brandingpattrnen.png" alt="brandingOrangeImage" />
+        <img src="./images/imgservice2.png.png" alt="img-service2.png" />
       ),
       imagemobile: (
-        <img src="./../images/marketingx.svg" alt="brandingOrangeImage" />
+        <img src="./../images/imgservice3.svg" alt="img-service3.svg" />
       ),
     },
     {
@@ -45,7 +45,16 @@ const OurServices = () => {
   const Card = (props) => {
     return (
       <div className={`card card${props.index}`}>
-        <img src={props.imageAfter} alt="brandingpattren" className="pattren" />
+        <div className="imgservice1">
+        <img src="./images/imgservice1.png"
+         alt="img-service2.png"  />
+        </div>
+       
+        {/* <img
+          src="./images/imgservice1.png"
+          className="MA-Right-img"
+          alt="hero"
+        /> */}
         <h3>{props.title}</h3>
         <p>{props.pargraph}</p>
         <p className="bold provide">{props.text}</p>

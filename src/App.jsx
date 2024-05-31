@@ -1,8 +1,9 @@
 import Hero from "./components/Hero/Hero";
-import HostingPricing from "./components/HostingPricing/HostingPricing";
+// import HostingPricing from "./Pages/HostingPricing/HostingPricing";
 import Navbar from "./components/Navbar/Navbar";
-import OurServices from "./components/OurServices/OurServices";
+import OurServices from "./Pages/OurServices/OurServices";
 import Footer from "./components/Footer/Footer";
+import HostingPricing from "./Pages/HostingPricing/HostingPricing";
 
 const App = () => {
   return (
