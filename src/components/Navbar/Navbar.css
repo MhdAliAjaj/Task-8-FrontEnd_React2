@@ -1,0 +1,77 @@
+
+.MA-navbar {
+
+  width: 100vw;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  padding:15px 40px 15px 17px;
+  background-color: #ffffff;
+  color: black;
+  flex-wrap: wrap;
+  z-index: 10;
+  /* margin: 20px 0; */
+ }
+.MA-navbar .MA-Logo-container {
+  display: flex;
+  margin-right: 30px;
+}
+.MA-navbar .MA-Logo-container .MA-Logo-image {
+  margin-right: 30px;
+}
+.MA-navbar .MA-Logo-container .MA-Logo-description {
+  color: black;
+}
+.MA-navbar .MA-Right-navbar  {
+  display: flex;
+  gap: 15px;
+  margin-right: 20px;
+}
+.MA-navbar .MA-Right-navbar a {
+  color: rgb(147, 140, 140);
+  text-decoration: none;
+}
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  background-color: #e9baba;
+  color: white;
+  padding: 0 15px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #685a5a;
+}
