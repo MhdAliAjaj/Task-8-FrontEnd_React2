@@ -1,9 +1,12 @@
 import Hero from "./components/Hero/Hero";
 // import HostingPricing from "./Pages/HostingPricing/HostingPricing";
 import Navbar from "./components/Navbar/Navbar";
-import OurServices from "./Pages/OurServices/OurServices";
+import OurServices from "./components/OurServices/OurServices";
 import Footer from "./components/Footer/Footer";
-import HostingPricing from "./Pages/HostingPricing/HostingPricing";
+import HostingPricing from "./components/HostingPricing/HostingPricing";
+import Content from "./Pages/Content";
+import { Outlet } from "react-router-dom";
+import { useState } from "react";
 
 const App = () => {
   return (
@@ -13,8 +16,9 @@ const App = () => {
         <Hero />
       </header>
       <main>
-        <OurServices />
-        <HostingPricing />
+        
+        <Outlet />
+     
       </main>
       <footer>
         <Footer />
@@ -24,3 +28,15 @@ const App = () => {
 };
 
 export default App;
+
+//  {/* <header>
+//     <Navbar />
+//     <Hero />
+//   </header>
+//   <main>
+//     {/* <Content /> */}
+//     <Outlet />
+//   </main>
+//   <footer>
+//     <Footer />
+//   </footer> */}
