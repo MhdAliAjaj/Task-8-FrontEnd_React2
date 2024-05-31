@@ -11,15 +11,15 @@ import { useState } from "react";
 const App = () => {
   return (
     <>
-      <header>
+       <header>
         <Navbar />
         <Hero />
       </header>
-      <main>
-        
-        <Outlet />
-     
-      </main>
+      
+
+        {/* <Outlet /> */}
+     <Content />
+      
       <footer>
         <Footer />
       </footer>
